@@ -18,7 +18,7 @@ class Api(object):
         # get mode default to sandbox
         self.mode = kwargs.get("mode", "sandbox")
         
-        if self.mode != "live" and self.mode != "sandbox":
+        if self.mode.lower() != "live" and self.mode.lower() != "sandbox":
             # TODO handle errors
             return
 
@@ -41,7 +41,7 @@ class Api(object):
 
         else:
             log.info(
-                'Not logging full request/response headers and body in live mode for compliance')
+                'Not logging full request/response header')
 
         kwargs['data']['merchant-id'] = self.merchant_id
         kwargs['data']['api-key'] = self.api_key
@@ -64,7 +64,7 @@ class Api(object):
         return self.http_call('POST', self.default_endpoint() + uri, **kwargs)
 
     def handle_response(self, response, content):
-        ''' Expresspay shit status system handle here. And return a json response '''
+        ''' Expresspay status system handle here. And return a json response '''
         # status = content['status']
         if response.status_code == 404:
             raise exceptions.ConnectionError(response, content) 
