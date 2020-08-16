@@ -1,23 +1,26 @@
-# expresspay-python-sdk
-SDK under development
+<p align="center">
+  <img src="https://expresspaygh.com/images/logo.png" />
+</p>
+<br/>
 
-Getting Started
+# Expresspay Python SDK
 
+A simple library for Python integrators
 
-## Prerequisites
+------------------
 
-```
-- pip 
-- python3
-```
+# Install
 
-## Usage
-
+* Install python 3 and pip for your environment - (Python3)[https://getcomposer.org/download/]
+* Import package via pip using the command below
 ```python
-
-from expresspay import ExpressPay
-
-api = Expresspay()
-
-api.query()
+pip install expresspay_python_sdk_dist
 ```
+
+-------------------
+
+# Demo / Test
+
+* Browser Demo: [https://github.com/expresspaygh/exp-demos/tree/master/exp-python-sdk-demo]
+* Install pytest: `pip install pytest`
+* Unit Test: `make pytest`
