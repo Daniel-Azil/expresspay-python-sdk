@@ -23,4 +23,4 @@ pip install expresspay_python_sdk_dist
 
 * Browser Demo: [https://github.com/expresspaygh/exp-demos/tree/master/exp-python-sdk-demo]
 * Install pytest: `pip install pytest`
-* Unit Test: `make pytest`
+* Unit Test: `pytest`
