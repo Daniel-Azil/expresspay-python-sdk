@@ -4,8 +4,8 @@ Pull in packages
 import json
 import logging
 import requests
-from src.utility import config
-from src.requests import (query, submit)
+from expay_sdk.utility import config
+from expay_sdk.requests import (query, submit)
 
 """
 Internal logging

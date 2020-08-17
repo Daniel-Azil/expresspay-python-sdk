@@ -2,8 +2,8 @@
 Pull in packages
 """
 import pytest
-from src import merchant_api
-from src.utility import config
+from expay_sdk import merchant_api
+from expay_sdk.utility import config
 
 """
 Init keys

@@ -2,8 +2,8 @@
 Pull in packages
 """
 import pytest
-from src.utility import config
-from src.requests import submit
+from expay_sdk.utility import config
+from expay_sdk.requests import submit
 
 """
 Init config setup

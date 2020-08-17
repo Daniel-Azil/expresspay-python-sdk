@@ -4,7 +4,7 @@ Pull in packages
 import json
 import inspect
 import logging
-from src.utility import config
+from expay_sdk.utility import config
 
 """
 Internal logging

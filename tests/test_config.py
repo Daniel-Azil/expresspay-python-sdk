@@ -2,18 +2,18 @@
 Pull in packages
 """
 import pytest
-from src.utility import config
+from expay_sdk.utility import config
 
 """
 Init config setup
 """
-config = config.Config("089237783227", "JKR91Vs1zEcuAj9LwMXQu-H3LPrDq1XCKItTKpmLY1-XsBgCnNpkDT1GER8ih9f-UTYoNINatMbreNIRavgu-89wPOnY6F7mz1lXP3LZ")
+config_class = config.Config("089237783227", "JKR91Vs1zEcuAj9LwMXQu-H3LPrDq1XCKItTKpmLY1-XsBgCnNpkDT1GER8ih9f-UTYoNINatMbreNIRavgu-89wPOnY6F7mz1lXP3LZ")
 
 """
 Test Object Representation
 """
 def test_repr():
-  _repr = repr(config)
+  _repr = repr(config_class)
   assert _repr is not None
   assert type(_repr) is str
 
@@ -21,7 +21,7 @@ def test_repr():
 Test String Representation
 """
 def test_str():
-  _str = str(config)
+  _str = str(config_class)
   assert _str is not None
   assert type(_str) is str
 
@@ -29,7 +29,7 @@ def test_str():
 Test Get Sandbox Url
 """
 def test_get_sandbox_url():
-  sandbox = config.get_sandbox_url()
+  sandbox = config_class.get_sandbox_url()
   assert sandbox is not None
   assert type(sandbox) is str
 
@@ -37,7 +37,7 @@ def test_get_sandbox_url():
 Test Get Production Url
 """
 def test_get_production_url():
-  production = config.get_production_url()
+  production = config_class.get_production_url()
   assert production is not None
   assert type(production) is str
 
@@ -45,7 +45,7 @@ def test_get_production_url():
 Test Get Merchant ID
 """
 def test_get_merchant_id():
-  merchant_id = config.get_merchant_id()
+  merchant_id = config_class.get_merchant_id()
   assert merchant_id is not None
   assert type(merchant_id) is str
 
@@ -53,6 +53,6 @@ def test_get_merchant_id():
 Test Get Merchant Api Key
 """
 def test_get_merchant_key():
-  merchant_key = config.get_merchant_key()
+  merchant_key = config_class.get_merchant_key()
   assert merchant_key is not None
   assert type(merchant_key) is str
