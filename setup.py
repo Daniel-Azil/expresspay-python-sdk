@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
   long_description = fh.read()
 
 setuptools.setup(
-  name='expresspay_python_sdk_main_test',
+  name='expresspay_python_sdk',
   version='1.0.0',
   description='Expresspay Python SDK',
   packages=setuptools.find_packages(),

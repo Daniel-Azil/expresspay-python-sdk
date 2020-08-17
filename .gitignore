@@ -1,4 +1,4 @@
 .pytest_cache
 build
 dist
-expresspay_python_sdk_main_test.egg-info
+*.egg-info
