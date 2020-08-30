@@ -136,6 +136,7 @@ print("----------------------------------------")
 print("\n")
 
 ```
+
 ```
 ----------------------------------------
 MERCHANT CHECKOUT: (The checkout url is based on your selected environment)
@@ -148,8 +149,7 @@ https://sandbox.expresspaygh.com/api/checkout.php?token=43165f2bcf90eef856.51431
 
 ## Query request - Before payment
 
-This request checks the payment status for an invoice on expressPay, below you will find an example request and response for 
-an unpaid invoice.
+This request checks the payment status for an invoice on expressPay, below you will find an example request and response for an unpaid invoice.
 
 ```python
 from expay_sdk import merchant_api
@@ -195,8 +195,7 @@ MERCHANT QUERY:
 
 ## Query request - After payment
 
-This request checks the payment status for an invoice on expressPay, below you will find an example request and response for 
-a paid invoice.
+This request checks the payment status for an invoice on expressPay, below you will find an example request and response for a paid invoice.
 
 ```python
 from expay_sdk import merchant_api
